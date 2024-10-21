@@ -66,8 +66,8 @@ def final_preview():
     st.download_button(
         label="Download JSON",
         data=json_data,
-        file_name="content.json",
+        file_name="VTA_content.json",
         mime="application/json"
     )
     
-    st.markdown("[Click here, upload this output file and view Result](https://dashboard.cohere.com/api-keys)")
+    st.markdown("To view the Result, [Click here](https://sjy-video-tutor-assist-student-side.streamlit.app/), and upload this VTA output file")
