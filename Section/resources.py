@@ -9,7 +9,7 @@ def generate_title(summary):
         model='command-xlarge-nightly',
         prompt=f"Generate a title for the following summary without 'Here is a potential title:':\n\n{summary}.",
         max_tokens=20,
-        temperature=0.5,
+        temperature=0.3,
         k=0,
         stop_sequences=["--"]
     )

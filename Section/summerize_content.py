@@ -3,7 +3,7 @@ import streamlit as st
 @st.cache_data
 def summarize_text(text):
     response = st.session_state.co.generate(
-        model='command-light-nightly',
+        model='command-xlarge-nightly',
         prompt=f"Summarize the following text into an essay:\n\n{text}",
         temperature=0.5,
         k=0,

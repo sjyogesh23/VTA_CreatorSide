@@ -3,7 +3,7 @@ import streamlit as st
 @st.cache_data
 def suggest_question_counts(summary):
     response = st.session_state.co.generate(
-        model='command-light-nightly',
+        model='command-xlarge-nightly',
         prompt=f"""Based on the following summary, suggest the number of MCQ and Descriptive questions that can be generated without banality.
                 For MCQs, suggest ranges for Easy, Intermediate, and Hard questions.
                 For Descriptive, suggest ranges for Easy, Intermediate, and Hard questions.
@@ -19,7 +19,7 @@ def suggest_question_counts(summary):
                 Hard -
                 """,
         max_tokens=100,
-        temperature=1.0,
+        temperature=0.5,
         k=0,
         stop_sequences=["--"]
     )
