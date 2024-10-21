@@ -48,6 +48,7 @@ def final_preview():
     data = {
         "vta_file" : True,
         "title": st.session_state.title,
+        "transcript":st.session_state.transcription,
         "summary": st.session_state.summary,
         "notes": st.session_state.notes,
         "quiz": {

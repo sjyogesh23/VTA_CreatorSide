@@ -18,7 +18,7 @@ def get_api_key():
 
     if st.session_state.api_key == "":
         st.title("API Key Submission")
-        st.markdown("[Click here, Login and Generate key!](https://dashboard.cohere.com/api-keys)")
+        st.markdown("Don't have API key? [Click here](https://dashboard.cohere.com/api-keys), Login and Generate key!")
         api_key_input = st.text_input("Enter your API Key", type="password")
         
         if st.button("Submit API Key"):
